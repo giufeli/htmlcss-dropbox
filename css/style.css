@@ -17,6 +17,7 @@ body{
 	left: 0;
 }
 
+
 .nav-ul{
     display: flex;
     justify-content: space-between;
@@ -74,12 +75,14 @@ a{
 
 .header-main-box-main{
     display: flex;
+
     
 }
 
 .img-header-box-main{
     width:100%;
     height:100%;
+    
 }
 
 
@@ -103,9 +106,9 @@ a{
     padding-bottom: 35px;
 }
 
-.container-main{
+.container-main-firts{
+    display: flex;
     background-color: blueviolet;
-    height: 5000px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -115,7 +118,47 @@ h2{
     font-size: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    
 }
+
+.container-main-second{
+    display: flex;
+    background-color: red;
+    height: 500px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-businessplan1{
+    border: 1px solid black;
+    width: 33%;
+    margin-top: 30px;
+}
+
+.singolo{
+    text-align: center;
+    border-bottom: 1px solid black;
+    color: white;
+    padding: 10px;   
+}
+
+li{
+    list-style: none;
+}
+
+.container-businessplan1 ul{
+    padding-top: 40px;
+}
+
+.container-businessp-ul li{
+    padding-bottom: 20px;
+}
+
+
+.container-businessplan1 div{
+    padding-bottom: 20px;
+}
+
+
 
 
