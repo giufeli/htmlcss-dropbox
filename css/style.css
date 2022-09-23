@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -15,6 +16,8 @@ body{
 	top: 0;
 	right: 0;
 	left: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 10px gray;
 }
 
 
@@ -45,7 +48,7 @@ body{
     margin-right: 40px;
 }
 
-a{
+header a{
     color: black;
     text-decoration: none;
 }
@@ -68,9 +71,9 @@ a{
 
 .header-main-box-title{
     color: black;
-    font-size: 100px;
-    padding-top: 20px;
-    padding-bottom: 70px;
+    font-size: 80px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .header-main-box-main{
@@ -82,6 +85,7 @@ a{
 .img-header-box-main{
     width:100%;
     height:100%;
+    margin-bottom: -50px;
     
 }
 
@@ -94,11 +98,20 @@ a{
     width: 70%;
 }
 
-.BottoneH{
+.BottoneH, .BottoneM{
     background-color: rgb(0, 136, 255);
     color: white;
     padding: 10px 23px;
     text-align: center;
+    text-decoration: none;
+}
+
+.BottoneM{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px; 
 }
 
 .header-box-bottone{
@@ -116,24 +129,41 @@ a{
 
 h2{
     font-size: 40px;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 40px;
 }
 
-.container-main-second{
+.container-main-principale1{
     display: flex;
-    background-color: red;
-    height: 500px;
+    flex-wrap: wrap;
+    background-color: rgb(191, 191, 191);
+   
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .container-businessplan1{
+    color: black;
     border: 1px solid black;
-    width: 33%;
     margin-top: 30px;
+    max-width:300px;
+    max-height: 1000px;
 }
+
+#box1, #box2 {
+    margin-right: 50px;
+}
+
+.span-container1{
+    padding: 20px;
+}
+
+.span-container2{
+    padding: 30px;
+}
+
 
 .singolo{
     text-align: center;
@@ -151,14 +181,67 @@ li{
 }
 
 .container-businessp-ul li{
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 
 .container-businessplan1 div{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
+hr{
+    width: 60px;
+    border-top: 1.5px solid gray;
+    margin-top: 10px;
+}
+
+.level{
+    font-size: 30px;
+}
+
+#punti-salienti{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.container-businessp2-ul i{
+    color: rgb(0, 136, 255);
+    padding-bottom: 25px;
+}
+
+.container-businessplan2{
+    color: black;
+    border: 1px solid black;
+    margin-top: 30px;
+    height: 230px;
+    width: 100%;
+}
+
+#Enterprise{
+    display: flex;
+    justify-content:space-between;
+    max-height: 50px;
+    padding-bottom: 10px;
+}
+
+#Enterprise-bottom{
+    display: flex;
+    height: 40px;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.price{
+    padding-bottom: 50px;
+}
 
 
 
