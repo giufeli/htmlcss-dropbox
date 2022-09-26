@@ -32,10 +32,6 @@ body{
     font-size: 15px;
 }
 
-.nav-span1{
-    display: flex;
-    justify-content: space-evenly;
-}
 
 
 .nav-ul ul{
@@ -53,10 +49,6 @@ header a{
     text-decoration: none;
 }
 
-
-.nav-span{
-    display: flex;
-}
 
 .container-header{
     background-color: rgba(180,208,231,255);
@@ -83,8 +75,13 @@ header a{
 .img-header-box-main{
     width:100%;
     height:100%;
-    margin-bottom: -80px;    
+    margin-bottom: -80px;
+    transition: 0.4s;  
 }
+
+.img-header-box-main:hover {
+    transform: scale(1.07); 
+  }
 
 
 .header-main-box-main .testo{
@@ -120,6 +117,7 @@ header a{
 #freccia-header{
     margin-top: 50px;
     font-size: 60px;
+    color: rgb(30, 29, 29);
 }
 
 .container-main-firts{
@@ -127,6 +125,11 @@ header a{
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-radio{
+    font-size: 20px;
+    padding-right: 30px;
 }
 
 h2{
@@ -149,6 +152,7 @@ h2{
 .container-businessplan1{
     color: black;
     border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
     margin-top: 30px;
     max-width:300px;
     max-height: 1000px;
@@ -193,7 +197,7 @@ li{
 
 #hr1{
     width: 60px;
-    border-top: 1.5px solid gray;
+    border: 1.5px solid gray;
     margin-top: 10px;
 }
 
@@ -218,6 +222,7 @@ li{
 .container-businessplan2{
     color: black;
     border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
     margin-top: 30px;
     height: 230px;
     width: 100%;
@@ -267,7 +272,7 @@ li{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 30px;
     margin-top: 10px;
 }
@@ -283,19 +288,20 @@ h3{
 .testo-info{
     color: black;
     font-size: 16px;
-    line-height: 1.3;
-    padding-bottom: 60px;
+    line-height: 1.4;
+    padding-bottom: 30px;
 }
 
 #Trova-partner{
     height: 40px;
     color: rgb(48, 48, 48);
-    border: 1px solid rgb(48, 48, 48);
+    border: 1px solid rgb(102, 102, 102);
     padding: 15px 24px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     padding-top: 20px;
+    margin-top: 50px;
 }
 
 .container-main-operazioni-business{
@@ -334,7 +340,6 @@ h3{
 }
 
 .big-container-footer{
-    max-width: 1700px;
     max-height: 2000px;
     padding-top: 120px;
     margin-left: auto;
@@ -344,7 +349,7 @@ h3{
 
 .container-footer{
     display: flex;
-    max-width: 2000px;
+    max-width: 1500px;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -368,7 +373,9 @@ h3{
     height: calc(100%/2); 
 }
 
-.quadrato-small2{
+.quadrato-small2, .quadrato-small3, .quadrato-small4, .quadrato-small5, .quadrato-small6, .quadrato-small7, .quadrato-small8{
+    display: flex;
+    justify-content: center;
     background-color: rgba(97,8,43,255);
     width: calc(100%/2);
     height: calc(100%/2); 
@@ -376,41 +383,31 @@ h3{
 
 .quadrato-small3{
     background-color: rgba(0,147,206,255);
-    width: calc(100%/2);
-    height: calc(100%/2);    
 }
 
 .quadrato-small4{
     background-color: rgba(255,28,28,255);
-    width: calc(100%/2);
-    height: calc(100%/2); 
 }
 
 .quadrato-small5{
     background-color: rgba(213,0,31,255);
-    width: calc(100%/2);
-    height: calc(100%/2); 
 }
 
 .quadrato-small6{
     background-color: rgba(180,208,231,255);
-    width: calc(100%/2);
-    height: calc(100%/2); 
 }
 
 .quadrato-small7{
     background-color: rgba(13,36,129,255);
-    width: calc(100%/2);
-    height: calc(100%/2); 
 }
 
 .quadrato-small8{
     background-color: rgba(255,216,48,255);
-    width: calc(100%/2);
-    height: calc(100%/2); 
 }
 
 .quadrato-small9{
+    display: flex;
+    justify-content: center;
     background-color: rgba(162,211,155,255);
     width: calc(90%);
     height: calc(90%);
@@ -429,7 +426,8 @@ h3{
 }
 
 .container-quadro1 div{
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     
 }
 
@@ -437,7 +435,10 @@ h3{
     width: 50%;
     height: 50%;
     object-fit: contain;
-    margin: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    filter: invert(1);
+    
 }
 
 .box-img-quadrato-big{
@@ -450,32 +451,167 @@ h3{
     object-fit: contain;
 }
 
-.img-quadrati-small{
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-    margin: 30px;
-}
-
 .container-footer1{
-    background-color:blanchedalmond;
+    background-color:rgba(180,208,231,255);
     display: flex;
-    max-width: 1000px;
-    height: 250px;
+    min-width: 1500px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto; 
 }
 
+.container-footer2{
+    display: flex;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.container-footer3{
+    background-color: black;
+    width: 100%;
+
+}
+
+.big-container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
 .container-footer-porta-dropbox{
     display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
+    justify-content: center;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    min-width: 1000px;
 }
 
 .testo-porta-dropbox{
+    display: flex;
+    justify-content:space-between;
+    max-width: 100%;
 }
+
+
+#porta-dropbox-bottom{
+    background-color: white;
+    color: black;
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+}
+
+#h3-porta-dropbox{ 
+    color: rgba(97,8,43,255);
+   
+}
+
+.container-porta-dropbox{
+    max-width: 400px;
+}
+
+.container-domande-frequenti{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1000px;
+    padding-bottom: 150px;
+}
+
+#h3-domande{
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+
+.container-footer-elenco{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1300px;
+    color: white;
+}
+
+.footer-elenco{
+    display: flex;
+}
+
+#title-elenco{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.colonna-elenco li{
+    padding-bottom: 25px;
+}
+
+.container-footer-finale{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1300px;
+    min-height: 300px;
+    color: white;   
+    padding-top: 70px;
+}
+
+#hr-finale{
+    width: 100px;
+    margin-bottom: 50px;
+    border: 0.1px solid rgb(157, 157, 157);
+}
+
+.finale{
+    color: rgb(157, 157, 157);
+}
+
+.colonna-elenco a{
+    text-decoration: none;
+    color: white;
+}
+
+.box-domande a{
+    text-decoration: none;
+    color: black;
+}
+
+.box-domande{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.test{
+    position: relative;
+}
+
+.domanda1{
+
+}
+
+.testsuper{
+    display: none;
+}
+
+.testsuper:hover{
+    display: black ;
+}
+
+
+
+
+
+
+
 
 
 
