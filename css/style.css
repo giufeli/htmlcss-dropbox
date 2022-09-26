@@ -597,6 +597,7 @@ h3{
 
 .testsuper{
     display: none;
+    padding-top: 20px;
 }
 
 .box-domande:hover .testsuper{
