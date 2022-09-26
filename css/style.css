@@ -94,13 +94,6 @@ header a{
     width: 70%;
 }
 
-.BottoneH, .BottoneM{
-    background-color: rgb(0, 136, 255);
-    color: white;
-    padding: 10px 23px;
-    text-align: center;
-    text-decoration: none;
-}
 
 .BottoneM{
     display: flex;
@@ -128,11 +121,22 @@ header a{
     color: rgb(30, 29, 29);
 }
 
-#test-colore:hover{
-    background-color: rgb(183, 221, 255);
-    padding: 10px 0px 10px 0px;
-    
+.nav-span1 a:hover{
+    color: rgba(0,97,255,255);
+    transform: scale(1.1);
+    transition: 0.25s;
+    font-size: 18px;  
 }
+
+.BottoneH, .BottoneM{
+    background-color: rgb(0, 136, 255);
+    color: white;
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
 
 .container-main-firts{
     display: flex;
@@ -210,9 +214,10 @@ li{
 }
 
 #hr1{
-    width: 60px;
-    border:  1px solid rgb(192, 192, 192);
-    margin-top: 10px;
+    height: 1px;
+    width: 70px;
+    background-color: #ccc;
+    border: none;
 }
 
 .level{
@@ -304,6 +309,7 @@ h3{
     font-size: 16px;
     line-height: 1.4;
     padding-bottom: 30px;
+    margin-top: 25px;
 }
 
 #Trova-partner{
@@ -577,9 +583,21 @@ h3{
 }
 
 #hr-finale{
+    height: 1px;
+    width: 70px;
+    background-color: #ccc;
+    border: none;
+    margin-bottom: 25px;
+}
+
+
+#hr-quadrati{
+    height: 1px;
     width: 100px;
-    margin-bottom: 50px;
-    border: 0.1px solid rgb(157, 157, 157);
+    background-color: #ccc;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .finale{
@@ -604,19 +622,15 @@ h3{
     padding-bottom: 50px;
 }
 
-.test{
-    position: relative;
-}
 
-
-.testsuper{
+.faq{
     display: none;
     padding-top: 20px;
     font-size: 15px;
     color: rgb(75, 75, 75);
 }
 
-.box-domande:hover .testsuper{
+.box-domande:hover .faq{
     display: block ;
 }
 
