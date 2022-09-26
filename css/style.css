@@ -594,19 +594,14 @@ h3{
     position: relative;
 }
 
-.domanda1{
-
-}
 
 .testsuper{
     display: none;
 }
 
-.testsuper:hover{
-    display: black ;
+.box-domande:hover .testsuper{
+    display: block ;
 }
-
-
 
 
 
