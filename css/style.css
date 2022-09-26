@@ -40,6 +40,8 @@ body{
 }
 
 .nav-ul li{
+    display: flex;
+    align-items: center;
     list-style: none;
     margin-right: 40px;
 }
@@ -108,6 +110,12 @@ header a{
     margin-bottom: 10px; 
 }
 
+.nav-span1{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
 
 .header-box-bottone{
     padding-top: 35px;
@@ -118,6 +126,12 @@ header a{
     margin-top: 50px;
     font-size: 60px;
     color: rgb(30, 29, 29);
+}
+
+#test-colore:hover{
+    background-color: rgb(183, 221, 255);
+    padding: 10px 0px 10px 0px;
+    
 }
 
 .container-main-firts{
@@ -197,7 +211,7 @@ li{
 
 #hr1{
     width: 60px;
-    border: 1.5px solid gray;
+    border:  1px solid rgb(192, 192, 192);
     margin-top: 10px;
 }
 
@@ -519,7 +533,7 @@ h3{
 .container-domande-frequenti{
     margin-left: auto;
     margin-right: auto;
-    min-width: 1000px;
+    width: 1000px;
     padding-bottom: 150px;
 }
 
@@ -598,6 +612,8 @@ h3{
 .testsuper{
     display: none;
     padding-top: 20px;
+    font-size: 15px;
+    color: rgb(75, 75, 75);
 }
 
 .box-domande:hover .testsuper{
